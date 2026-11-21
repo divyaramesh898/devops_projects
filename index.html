@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+        }
+
+        header {
+            background: #6c3ce9;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #24134d;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcf70;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #c9b6ff, #a4d8ff);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #30116b;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            background: #6c3ce9;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #24134d;
+        }
+
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .about h2 {
+            color: #6c3ce9;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #6c3ce9;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #24134d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>✨ MY WEBSITE ✨</h1>
+        <p>Welcome to My Creative World</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome Everyone!</h1>
+        <p>Make Your Dreams Come True 🚀</p>
+
+        <button onclick="showMessage()">
+            Get Started
+        </button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We create beautiful things with creativity and technology.</p>
+    </section>
+
+    <section class="cards" id="services">
+
+        <div class="card">
+            <h3>🎨 Design</h3>
+            <p>Creative and beautiful designs for everyone.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Development</h3>
+            <p>Build modern and attractive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Innovation</h3>
+            <p>Turn your ideas into reality.</p>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: mywebsite@gmail.com</p>
+        <p>© 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to My Website! ❤️");
+        }
+    </script>
+
+</body>
+</html>
